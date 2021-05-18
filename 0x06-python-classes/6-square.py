@@ -22,7 +22,7 @@ class Square:
         """Set the size to a value."""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        if value < 0:
+        if self.__size < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
 
