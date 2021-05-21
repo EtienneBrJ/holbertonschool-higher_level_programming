@@ -4,6 +4,7 @@ Add module print_square
 Prints a square according to the size
 """
 
+
 def print_square(size):
     """
     Prints a square according to the size in argument

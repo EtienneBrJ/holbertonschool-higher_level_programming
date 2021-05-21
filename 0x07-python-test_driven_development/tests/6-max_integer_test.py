@@ -52,11 +52,6 @@ class TestMaxInt(unittest.TestCase):
         result = max_integer(l)
         self.assertEqual(result, 1)
 
-    def test_strings(self):
-        """Test with a list of strings: should return the first string"""
-        l = ["Holberton", "School"]
-        result = max_integer(l)
-        self.assertEqual(result, "Holberton")
 
     def test_none(self):
         """Test with a None as parameter: should raise a TypeError"""
