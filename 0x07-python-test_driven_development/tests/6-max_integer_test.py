@@ -57,5 +57,11 @@ class TestMaxInt(unittest.TestCase):
         """Test with a None as parameter: should raise a TypeError"""
         self.assertRaises(TypeError, max_integer, None)
 
+    def test_strings(self):
+        """Test with a list of strings: should return the first string"""
+        l = ["hi", "hello"]
+        result = max_integer(l)
+        self.assertEqual(result, "hi")
+
 if __name__ == '__main__':
     unittest.main()
