@@ -52,9 +52,9 @@ class Rectangle:
     def __str__(self):
         """ Prints a representation of a Rectangle instance
             if (height && width) != 0."""
-        if self.__height == 0 or self.__width == 0:
-            return ""
         square_rep = ""
+        if self.__height == 0 or self.__width == 0:
+            return square_rep
         for i in range(self.__height):
             for j in range(self.__width):
                 square_rep += '#'
