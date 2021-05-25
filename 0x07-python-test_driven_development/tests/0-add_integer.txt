@@ -15,14 +15,6 @@
     >>> add_integer(0, 0)
     0
 
-    >>> add_integer('h')
-    Traceback (most recent call last):
-    TypeError: a must be an integer
-
-    >>> add_integer(2, 'a')
-    Traceback (most recent call last):
-    TypeError: b must be an integer
-
     >>> add_integer(None)
     Traceback (most recent call last):
     TypeError: a must be an integer
