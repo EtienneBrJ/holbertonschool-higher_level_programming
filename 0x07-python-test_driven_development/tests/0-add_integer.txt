@@ -7,6 +7,7 @@
     Function doc test
     >>> len(__import__("0-add_integer").add_integer.__doc__) > 5
     True
+    
     >>> add_integer(2, 3)
     5
 
