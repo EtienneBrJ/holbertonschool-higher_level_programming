@@ -107,4 +107,4 @@ class Rectangle:
                 size: size of the new Rectangle
             Return
                 The new Rectangle instance"""
-        return cls(size, size)
+        return Rectangle(size, size)
