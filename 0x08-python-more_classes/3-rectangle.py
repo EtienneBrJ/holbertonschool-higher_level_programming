@@ -50,7 +50,7 @@ class Rectangle:
         return ((self.__height * 2) + (self.__width * 2))
 
     def __str__(self):
-        """ Prints a representation of a Rectangle instance 
+        """ Prints a representation of a Rectangle instance
             if (height && width) != 0."""
         if self.__height == 0 or self.__width == 0:
             return ""
