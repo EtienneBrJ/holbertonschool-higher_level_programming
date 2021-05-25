@@ -1,8 +1,12 @@
     >>> add_integer = __import__('0-add_integer').add_integer
 
+    Module doc test
     >>> len(__import__("0-add_integer").__doc__) > 0
     True
 
+    Function doc test
+    >>> len(__import__("0-add_integer").add_integer.__doc__) > 0
+    True
     >>> add_integer(2, 3)
     5
 
