@@ -8,6 +8,10 @@ class Rectangle:
             width of the rectangle
             height of the rectangle"""
     def __init__(self, width=0, height=0):
+        """ Initialize a rectangle instance
+            Args:
+                height of a Rectangle
+                width of a Rectangle"""
         self.width = width
         self.height = height
 
@@ -61,3 +65,8 @@ class Rectangle:
             if i + 1 != self.__height:
                 square_rep += '\n'
         return square_rep
+
+    def __repr__(self):
+        """ Prints a string representation of the rectangle to be able
+            to recreate a new instance by using eval()"""
+        return("Rectangle({}, {})".format(self.__width, self.__height))
