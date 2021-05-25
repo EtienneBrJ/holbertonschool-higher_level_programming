@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Module 2-rectangle"""
+""" Module 4-rectangle"""
 
 
 class Rectangle:
@@ -48,3 +48,16 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         return ((self.__height * 2) + (self.__width * 2))
+
+    def __str__(self):
+        """ Prints a representation of a Rectangle instance 
+            if (height && width) != 0."""
+        if self.__height == 0 or self.__width == 0:
+            return ""
+        square_rep = ""
+        for i in range(self.__height):
+            for j in range(self.__width):
+                square_rep += '#'
+            if i + 1 != self.__height:
+                square_rep += '\n'
+        return square_rep
