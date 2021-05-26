@@ -1,1 +1,3 @@
-Python!!
+Hello Python
+---
+Zen attitude

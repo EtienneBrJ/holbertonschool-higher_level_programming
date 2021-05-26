@@ -7,6 +7,7 @@ Adds two integer together
 """
 
 
+
 def add_integer(a, b=98):
     """ Return addition of a and b if they're integer or float.
     Raise Error if not
@@ -18,3 +19,7 @@ def add_integer(a, b=98):
         raise TypeError("b must be an integer")
 
     return int(a) + int(b)
+
+
+rew = add_integer(0, 0, 0)
+print(rew)
