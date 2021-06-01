@@ -21,5 +21,12 @@ Test the class:
     >>> my_list.print_sorted()
     [1, 2, 3]
 
+    >>> my_list = MyList("Hello")
+
+    >>> my_list
+    ['H', 'e', 'l', 'l', 'o']
+
+    >>> my_list.print_sorted()
+    ['H', 'e', 'l', 'l', 'o']
 
 
