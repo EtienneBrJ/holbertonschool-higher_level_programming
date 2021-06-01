@@ -1,0 +1,8 @@
+Import the class:
+
+    >>> BG = __import__('7-base_geometry').BaseGeometry
+
+Test the class:
+
+    >>> base = BG()
+
