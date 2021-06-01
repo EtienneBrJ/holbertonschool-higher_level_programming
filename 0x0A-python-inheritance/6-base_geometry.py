@@ -7,6 +7,7 @@ class BaseGeometry:
     pass
 
     def area(self):
+        """ Add tests."""
         try:
             self.area()
         except:
