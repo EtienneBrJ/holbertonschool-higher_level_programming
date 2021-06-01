@@ -29,4 +29,7 @@ Test the class:
     >>> my_list.print_sorted()
     ['H', 'e', 'l', 'l', 'o']
 
+    >>> my_list_ = MyList('[1, 4, 2]')
 
+    >>> my_list_.print_sorted()
+    [' ', ' ', ',', ',', '1', '2', '4', '[', ']']  #??
