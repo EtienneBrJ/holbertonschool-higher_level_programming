@@ -6,6 +6,7 @@ class MyList(list):
     """class Mylist inherits from list."""
 
     def print_sorted(self):
-        """ Print an ascending sorted list."""
+        """ Public instance method
+            Print an ascending sorted list."""
 
         print(sorted(self))
