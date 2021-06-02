@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" Module from_json_string
+"""
 import json
 
 

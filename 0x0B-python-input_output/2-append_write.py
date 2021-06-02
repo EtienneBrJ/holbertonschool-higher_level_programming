@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-
+""" Module append_write
+"""
 
 def append_write(filename="", text=""):
     """ Writes a string to a text file (UTF8)
