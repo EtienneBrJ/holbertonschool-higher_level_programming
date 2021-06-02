@@ -20,7 +20,7 @@ class Student:
         dict = {}
         if attrs is None:
             return self.__dict__
-        
+
         for i in attrs:
             if isinstance(i, str) and hasattr(self, i):
                 dict[i] = getattr(self, i)
