@@ -2,6 +2,8 @@
 """ Adding all arguments to a Python list
     and then saving them to a file.
 """
+
+
 from sys import argv
 import json
 
