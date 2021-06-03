@@ -13,10 +13,11 @@ def pascal_triangle(n):
         intList = []
         for col in range(row):
             if col == 0 or col == row - 1:
-                intList.append(1)
+                n = 1
+                intList.append(n)
             else:
                 n = pascalTriangle[row-2][col-1] + pascalTriangle[row-2][col]
-                pascalTriangle.append(n)
+                intList.append(n)
         pascalTriangle.append(intList)
 
     return pascalTriangle
