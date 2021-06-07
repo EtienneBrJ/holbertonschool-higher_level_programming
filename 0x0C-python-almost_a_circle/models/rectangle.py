@@ -105,20 +105,13 @@ class Rectangle(Base):
         """
 
         for x in range(self.__y):
-                print('')
+            print('')
         for i in range(self.__height):
             for y in range(self.__x):
                 print(' ', end='')
             for j in range(self.__width):
                 print('#', end='')
             print('')
-
-    def __str__(self):
-        """ Return the print() and str() representation
-            of the Rectangle.
-        """
-        return '[Rectangle] ({}) {}/{} - {}/{}'.format(self.id, self.x, self.y,
-                                                       self.width, self.height)
 
     def update(self, *args, **kwargs):
         """ Public method:
@@ -169,3 +162,10 @@ class Rectangle(Base):
             "x": self.x,
             "y": self.y
         }
+
+    def __str__(self):
+        """ Return the print() and str() representation
+            of the Rectangle.
+        """
+        return '[Rectangle] ({}) {}/{} - {}/{}'.format(self.id, self.x, self.y,
+                                                       self.width, self.height)
