@@ -75,4 +75,4 @@ class Square(Rectangle):
             of the Square.
         """
         return '[Square] ({}) {}/{} - {}'.format(self.id, self.x, self.y,
-                                                    self.width)
+                                                 self.width)
