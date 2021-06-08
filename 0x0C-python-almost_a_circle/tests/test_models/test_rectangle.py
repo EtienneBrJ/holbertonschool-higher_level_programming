@@ -70,4 +70,4 @@ class test_Rectangle (unittest.TestCase):
             self.assertEqual(exception.args[0], "x must be >= 0")
 
         r1 = Rectangle(1, 2, 3, 4, 5)
-        self.assertEqual(type(r1), Rectangle)
+        self.assertEqual(r1.id, 5)
