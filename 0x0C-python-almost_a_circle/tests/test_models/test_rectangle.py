@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """Unittest for Rectangle class
 """
+from models.square import Square
 from models.rectangle import Rectangle
 from models.base import Base
 import unittest
-
 
 class test_Rectangle (unittest.TestCase):
     """Unittest class Rectangle
@@ -78,31 +78,6 @@ class test_Rectangle (unittest.TestCase):
         self.assertEqual(str(r_str), '[Rectangle] (1) 1/1 - 1/1')
 
 
-    def test_to_json_string_rec(self):
-        """Unittest for all the JSON manipulation
-        """
-        json_dictionary = Rectangle.to_json_string(None)
-        self.assertEqual(json_dictionary, '[]')
-
-        json_dictionary2 = Rectangle.to_json_string([])
-        self.assertEqual(json_dictionary, '[]')
-
-        json_dictionary3 = Rectangle.to_json_string([{'id': 12}])
-        self.assertEqual(json_dictionary3, '[{"id": 12}]')
-        self.assertEqual(type(json_dictionary), str)
-    
-    def test_from_json_string_rec(self):
-        """Unittest for all the JSON manipulation
-        """
-        json_dict = Rectangle.from_json_string(None)
-        self.assertEqual(json_dict, [])
-
-        json_dict2 = Rectangle.from_json_string("[]")
-        self.assertEqual(json_dict2, [])
-
-        json_dict3 = Rectangle.from_json_string('[{ "id": 89 }]')
-        self.assertEqual(json_dict3, [{"id": 89}])
-        self.assertEqual(type(json_dict3), list)
     
 
 

@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """Unittest for Base class
 """
+from models.square import Square
+from models.rectangle import Rectangle
 from models.base import Base
 import unittest
-
 
 class test_Base (unittest.TestCase):
     """Unittest class Base"""
