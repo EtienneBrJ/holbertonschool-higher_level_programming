@@ -71,6 +71,6 @@ class test_Rectangle (unittest.TestCase):
 
         self.assertEqual(7, Rectangle(10, 2, 0, 0, 7).id)
 
-        r6 = Rectangle(1, 2)
-        self.assertEqual(r6.area(), 2)
+        r6 = Rectangle(1, 2).area
+        self.assertEqual(r6, 2)
 
