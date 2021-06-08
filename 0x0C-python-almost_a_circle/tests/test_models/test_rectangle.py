@@ -80,10 +80,8 @@ class test_Rectangle (unittest.TestCase):
         r_dis = Rectangle(1, 1, 1, 1, 2).display()
         self.assertEqual(r_dis, None)
 
+        r_dis = Rectangle(1, 1).display()
+        self.assertEqual(r_dis, None)
 
-    
-
-
-
-        
-
+        r_dis = Rectangle(1, 1, 1, 1).display()
+        self.assertEqual(r_dis, None)
