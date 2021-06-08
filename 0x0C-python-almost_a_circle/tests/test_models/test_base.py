@@ -9,7 +9,8 @@ class test_Base (unittest.TestCase):
     """Unittest class Base"""
 
     def test_baseId(self):
-        """Unittest for base ID"""
+        """Unittest for base ID
+        """
         b1 = Base()
         self.assertEqual(b1.id, 1)
 
@@ -23,7 +24,8 @@ class test_Base (unittest.TestCase):
         self.assertEqual(b4.id, 89)
 
     def test_to_json_string(self):
-        """Unittest for all the JSON manipulation"""
+        """Unittest for all the JSON manipulation
+        """
         json_dictionary = Base.to_json_string(None)
         self.assertEqual(json_dictionary, '[]')
 
@@ -35,7 +37,8 @@ class test_Base (unittest.TestCase):
         self.assertEqual(type(json_dictionary), str)
     
     def test_from_json_string(self):
-        """Unittest for all the JSON manipulation"""
+        """Unittest for all the JSON manipulation
+        """
         json_dict = Base.from_json_string(None)
         self.assertEqual(json_dict, [])
 
@@ -45,5 +48,4 @@ class test_Base (unittest.TestCase):
         json_dict3 = Base.from_json_string('[{ "id": 89 }]')
         self.assertEqual(json_dict3, [{"id": 89}])
         self.assertEqual(type(json_dict3), list)
-
     
