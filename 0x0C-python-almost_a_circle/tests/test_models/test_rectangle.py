@@ -68,3 +68,6 @@ class test_Rectangle (unittest.TestCase):
             r5 = Rectangle(1, 2, -1, 3)
         except ValueError as exception:
             self.assertEqual(exception.args[0], "x must be >= 0")
+
+        r1 = Rectangle(1, 2, 3, 4, 5)
+        self.assertEqual(type(r1), Rectangle)
