@@ -77,6 +77,9 @@ class test_Rectangle (unittest.TestCase):
         r_str = Rectangle(1, 1, 1, 1, 1)
         self.assertEqual(str(r_str), '[Rectangle] (1) 1/1 - 1/1')
 
+        r_dis = Rectangle(1, 1, 1, 1, 2).display()
+        self.assertEqual(r_dis, None)
+
 
     
 
