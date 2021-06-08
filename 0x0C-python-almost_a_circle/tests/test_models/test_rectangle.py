@@ -70,3 +70,7 @@ class test_Rectangle (unittest.TestCase):
             self.assertEqual(exception.args[0], "x must be >= 0")
 
         self.assertEqual(7, Rectangle(10, 2, 0, 0, 7).id)
+
+        r6 = Rectangle(1, 2)
+        self.assertEqual(r6.area(), 2)
+
