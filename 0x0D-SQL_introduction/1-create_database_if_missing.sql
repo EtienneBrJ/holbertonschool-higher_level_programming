@@ -1,3 +1,3 @@
--- 3 first students in the Batch ID=3
--- because Batch 3 is the best!
+-- Create a database hbtn_0c_0
+-- if it dont exists
 CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
