@@ -1,3 +1,3 @@
--- List all the Database
--- of a sql server
+-- Lists all databases 
+-- of a SQl server
 SHOW DATABASES;
