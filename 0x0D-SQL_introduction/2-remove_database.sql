@@ -1,3 +1,3 @@
--- Delete the database hbtn... in a SQL server
--- if hbtn doesn't exist, the script dont fail
+-- Delete the database hbtn_0c_0 
+-- If it exists
 DROP DATABASE IF EXISTS hbtn_0c_0;
