@@ -11,8 +11,7 @@ function fact (num) {
 }
 
 if (isNaN(int_arg1)) {
-    console.log(1);
+  console.log(1);
 } else {
-    console.log(fact(int_arg1));
+  console.log(fact(int_arg1));
 }
-
