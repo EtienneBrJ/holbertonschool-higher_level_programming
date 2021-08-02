@@ -10,12 +10,16 @@ if (argv.length <= 3) {
     if (i === 2) {
       max = parseInt(argv[i]);
       max2 = parseInt(argv[i]);
-      continue;
     }
     if (parseInt(argv[i]) > max) {
       max2 = max;
       max = parseInt(argv[i]);
+      continue;
     }
+    if (parseInt(argv[i]) > max2) {
+        max2 = parseInt(argv[i]);
+      }
+
   }
   console.log(max2);
 }
