@@ -1,7 +1,6 @@
 #!/usr/bin/node
 
-const argv = process.argv;
-const arg1 = parseInt(argv[2]);
+const arg1 = parseInt(process.argv[2]);
 
 function fact (num) {
   if (num === 0) {
