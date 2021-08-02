@@ -16,10 +16,9 @@ if (argv.length <= 3) {
       max = parseInt(argv[i]);
       continue;
     }
-    if (parseInt(argv[i]) > max2) {
-        max2 = parseInt(argv[i]);
-      }
-
+    if (parseInt(argv[i]) > max2 && argv[i] < max) {
+      max2 = parseInt(argv[i]);
+    }
   }
   console.log(max2);
 }
