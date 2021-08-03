@@ -2,6 +2,6 @@
 
 let idx = 0;
 exports.logMe = function (item) {
-    console.log(idx + ': ' + item);
-    idx++;
+  console.log(idx + ': ' + item);
+  idx++;
 };
