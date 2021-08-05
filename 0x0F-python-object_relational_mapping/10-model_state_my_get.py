@@ -26,4 +26,5 @@ if __name__ == "__main__":
         else:
             flag = 1
 
-    print('Not found') if flag else None
+    if flag:
+        print('Not found')
