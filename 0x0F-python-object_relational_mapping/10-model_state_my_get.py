@@ -27,4 +27,3 @@ if __name__ == "__main__":
 
     if flag:
         print('Not found')
-    s.close()
