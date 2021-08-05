@@ -19,7 +19,7 @@ if __name__ == "__main__":
     flag = 0
     for state in s.query(State):
         if state.name == sys.argv[4]:
-            print("%(user)s", {'user': sys.argv[4]})
+            print("{}".format(state.id))
             flag = 0
             break
         else:
