@@ -9,9 +9,8 @@ from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
     db_uri = 'mysql+mysqldb://{}:{}@localhost/{}'\
-             .format(sys.argv[1], sys.argv[2], sys.argv[3],
-             pool_pre_ping=True)
-    engine = create_engine(db_uri)
+             .format(sys.argv[1], sys.argv[2], sys.argv[3])
+    engine = create_engine(db_uri,pool_pre_ping=True)
 
     Base.metadata.create_all(engine)
 
