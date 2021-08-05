@@ -10,7 +10,7 @@ if __name__ == "__main__":
             FROM cities INNER JOIN states\
             ON states.id = cities.state_id\
             WHERE states.name = %(state)s\
-            ORDER BY cities.name ASC", {'state': sys.argv[4]})
+            ORDER BY cities.id ASC", {'state': sys.argv[4]})
     city = [cities[0] for cities in c.fetchall()]
     print(", ".join(city))
     c.close()
