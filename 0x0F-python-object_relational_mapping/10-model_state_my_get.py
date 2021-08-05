@@ -16,9 +16,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     s = Session()
 
-    req = s.query(State).order_by(State.id).all()
     flag = 0
-    for item in req:
+    for item in s.query(State):
         if item.name == sys.argv[4]:
             print(item.id)
             flag = 0
