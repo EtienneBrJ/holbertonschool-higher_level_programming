@@ -7,7 +7,7 @@ if __name__ == "__main__":
     db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     c = db.cursor()
     c.execute("SELECT cities.name\
-            FROM cities JOIN states\
+            FROM cities INNER JOIN states\
             ON states.id = cities.state_id\
             WHERE states.name = %(state)s\
             ORDER BY cities.name", {'state': sys.argv[4]})
