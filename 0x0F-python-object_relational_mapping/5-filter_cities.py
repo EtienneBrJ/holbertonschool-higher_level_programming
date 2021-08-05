@@ -13,3 +13,5 @@ if __name__ == "__main__":
             ORDER BY cities.name", {'state': sys.argv[4]})
     city = [cities[0] for cities in c.fetchall()]
     print(", ".join(city))
+    c.close()
+    db.close()
