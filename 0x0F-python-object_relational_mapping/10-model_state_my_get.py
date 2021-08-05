@@ -17,9 +17,9 @@ if __name__ == "__main__":
     s = Session()
 
     flag = 0
-    for item in s.query(State):
-        if item.name == sys.argv[4]:
-            print(item.id)
+    for state in s.query(State):
+        if state.name == sys.argv[4]:
+            print("{}".format(state.id))
             flag = 0
             break
         else:
