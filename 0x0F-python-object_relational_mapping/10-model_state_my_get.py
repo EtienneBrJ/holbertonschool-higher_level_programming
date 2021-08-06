@@ -17,10 +17,14 @@ if __name__ == "__main__":
     s = Session()
     flag = 0
 
-    for state in s.query(State).filter(State.name == sys.argv[4]):
-        if state:
+    for state in s.query(State):
+        if state.name == sys.argv[4]:
             print("{}".format(state.id))
+            flag = 0
+            break
         else:
-            print('Not found')
+            flag = 1
+    if flag:
+        print('Not found')
 
     s.close()
