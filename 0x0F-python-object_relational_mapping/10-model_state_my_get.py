@@ -14,7 +14,7 @@ if __name__ == "__main__":
     engine = create_engine(db_uri, pool_pre_ping=True)
 
     Session = sessionmaker(bind=engine)
-    s = Session()
+    s = Session(engine)
     flag = 0
 
     for state in s.query(State):
