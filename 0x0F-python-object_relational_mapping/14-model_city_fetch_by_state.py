@@ -16,7 +16,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     s = Session()
 
-    for row in s.query(State, City).join(City).order_by(City.id):
+    for row in s.query(State, City).join(City).order_by(City.id).all():
         print("{}: ({}) {}".format(row[0].name, row[1].id, row[1].name))
 
     s.commit()
