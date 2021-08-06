@@ -15,8 +15,8 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     s = Session()
-
     flag = 0
+
     for state in s.query(State):
         if state.name == sys.argv[4]:
             print("{}".format(state.id))
@@ -24,6 +24,7 @@ if __name__ == "__main__":
             break
         else:
             flag = 1
-
     if flag:
         print('Not found')
+
+    s.close()
