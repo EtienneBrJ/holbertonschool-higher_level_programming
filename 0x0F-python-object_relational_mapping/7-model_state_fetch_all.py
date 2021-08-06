@@ -20,7 +20,4 @@ if __name__ == "__main__":
     # Query
     req = s.query(State).order_by(State.id).all()
     for item in req:
-        print(item.id, end=": ")
-        print(item.name)
-
-    s.close
+        print('{}: {}'.format(item.id, item.name))

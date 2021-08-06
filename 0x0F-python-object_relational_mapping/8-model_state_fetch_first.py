@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Lists all State objects from the database
+""" Lists the first State objects from the database
     using SQLAlchemy
 """
 import sys
@@ -19,4 +19,3 @@ if __name__ == "__main__":
     req = s.query(State).order_by(State.id).first()
     print('Nothing') if req is None else print('{}: {}'
                                                .format(req.id, req.name))
-    s.close

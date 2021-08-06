@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Lists all State objects from the database
+""" Lists all State objects containing 'a'  from the database
     using SQLAlchemy
 """
 import sys
