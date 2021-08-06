@@ -21,6 +21,7 @@ if __name__ == "__main__":
     new_state = State(name='California')
     new_state.cities.append(new_city)
 
+    # Add the given collection of instances to this Session
     s.add_all([new_state, new_city])
     s.commit()
 
