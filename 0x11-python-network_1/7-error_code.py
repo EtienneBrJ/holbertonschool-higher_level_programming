@@ -7,8 +7,8 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    try:
-        response = requests.get(argv[1])
+    response = requests.get(argv[1])
+    if response:
         print(response.text)
-    except requests.exceptions.HTTPError:
+    else:
         print("Error code: {}".format(response.status_code))
