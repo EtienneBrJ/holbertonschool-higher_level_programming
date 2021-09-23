@@ -1,1 +1,5 @@
-$(red_header).addClass('#FF0000')
+$(red_header).on({
+  click: function () {
+    $(header).addClass('#FF0000');
+  }
+});
